@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar starts here----------- */
+.navbar{
+    width:100%;
+    background-color: black;
+    height:3rem;
+}
+.nav{
+    width:80%;
+    padding-left: 6%;
+    height:100%;
+    color:#747168;
+    font-size: 14.5px;
+    display:grid;
+    grid-template-columns: 97px 70px 80px 80px;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.item1{
+    font-size: 17px;
+}
+/* navbar ends here------------------------ */
+
+/* sub_wrapper starts here------------- */
+.sub_wrapper{
+    padding:0% 6% 0% 6%;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+.left{
+    padding:3% 0% 2.5% 0%;
+}
+.blog_post_title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.by_test{
+    font-size: 16.5px;
+    margin-bottom: 15px;
+}
+.test{
+    color:#428BCA
+}
+.padding_date{
+     border-top: 0.5px solid #eae9e9;
+    border-bottom: 0.5px solid #eae9e9;
+}
+.post_date{
+    width:222px;
+    font-size:12px;
+    height: 3.5rem;
+    display: grid;
+    grid-template-columns: 1.5% 98.5%;
+    grid-template-columns: 5% 95%;
+    gap:4px;
+    align-items: center;
+}
+.fa-regular{
+    font-weight: 400;
+    font-size: 12px;
+    margin-right: 4px;
+}
+.img_div{
+    padding:2px 0px;
+    padding: 16px 0px;
+    /* border-top: 0.5px solid #e9e7e7; */
+    border-bottom: 0.5px solid #e9e7e7;
+}
+.img{
+    width:100%;
+    height:12rem;
+    background: #CCCCCC;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: serif;
+    color: #969696;
+}
+/* Paragraphs section starts here---------------- */
+.weight_para{
+    font-size: 20.5px;
+     line-height: 26px;
+    font-weight: 500;
+    padding: 3% 0%;
+}
+.para{
+    margin-bottom: 15px;
+    color:#4c4b4b;
+    font-size: 14.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Right div starts here--------------*/
+.right{
+    padding: 4% 0% 0% 5%;
+}
+.blog_search_div{
+    border:1.5px solid #d9d9d9;
+    padding: 8% 0% 5% 5%;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    background: #F5F5F5;
+}
+.blog_search{
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.input_div{
+    /* border:1px solid black; */
+    width:94%;
+    display: grid;
+    grid-template-columns: 88% 12%;
+    grid-template-rows: 1fr;
+    background: white;
+}
+input{
+    width:100%;
+    height:30px;
+    border: 1.5px solid #e5e3e3;
+    border-radius: 5px 0px 0px 5px;
+}
+.search_bar{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 5px 5px 0px;
+    border: 1.5px solid #e5e3e3;
+    border-left: none;
+}
+.fa-solid {
+    font-weight: 600;
+    font-size: 12.5px;
+}
+.blog_categories_div{
+    margin-top: 20px;
+    padding: 35px 23px 35px 20px;
+    border: 2px solid #EBEBEB;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+.blog_categories{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: #428BCA;
+    font-size: 15px;
+}
+.item{
+    margin-bottom: 3px;
+}
+.category{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+/* Side Widget div____________________ */
+.side_widget_div{
+    margin-top: 20px;
+    padding: 30px 25px 30px 20px;
+    border: 2px solid rgb(227, 226, 226);
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+.side_widget{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.side_widget_para {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: #464545;
+}
+/* Footer starts here---------------- */
+.footer{
+    border-top: 1px solid #eae8e8;
+    height: 8rem;
+    display: grid;
+    align-items: center;
+    font-size: 14.5px;
+    word-spacing: 0.5px;
+    margin:0% 6%;
+}
+
+
+/* Media queries starts here---------------- */
+@media(max-width:1000px){
+    .category{
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media(max-width:700px){
+    .sub_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .right {
+        padding: 4% 0% 0% 0%;
+    }
+    .category {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer{
+        margin: 40px 6% 0% 6%;
+    }
+}
+@media(max-width:350px){
+    .navbar{
+        height:6rem;
+    }
+    .nav{
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 40%;
+    }
+    .category {
+        grid-template-columns: 1fr;
+    }
+}
